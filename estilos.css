@@ -1,0 +1,138 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: black;
+}
+/*cabecera*/
+header {
+    display: block;
+    position: relative; /* Necesario para usar transform */
+   background-size: contain;
+   border: black;
+   border-style: solid;
+   color: white;
+   text-align: center;
+   padding: 1em 0;
+
+   }
+
+/*barra de navegació*/
+nav {
+    display: block;
+   background-color: #e32424;
+   overflow: hidden;
+   border: black;
+   border-style: solid;
+   border-radius: 10px;
+   margin: 20px;
+
+}
+
+nav a {
+   float: left;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 20px;
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color: #ddd;
+   color: #4f1348;
+}
+.container {
+   display: flex;
+   margin: 20px;
+}
+.main-content {
+   flex: 3;
+   padding: 10px;
+   background-color: #ff6c6c;
+   border: red;
+   border-style: solid;
+   border-radius: 10px;
+   color: white;
+   ::selection  {background-color: red;};
+
+
+}
+.asidebar {
+   flex: 1;
+   padding: 20px;
+   margin-left: 20px;
+   border-radius: 30px;
+}
+
+/*contenedor 2*/
+.container2 {
+   display: flex;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+   ::selection  {background-color: red;};
+}
+.main-content2 {
+   flex: 3;
+   padding: 20px;
+   background-color: #ff6c6c;
+   border: red;
+   border-style: solid;
+   border-radius: 10px;
+   color: white;
+
+}
+.asidebar2 {
+   flex: 1;
+   padding: 20px;
+   margin-left: 20px;
+   border-radius: 30px;
+
+}
+footer {
+   background-image:url(fondofooter.png) ;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   position: relative;
+   clear: both;
+   border-radius: 10px;
+   -webkit-text-stroke: 1px black;
+   margin-bottom: 10px;
+}
+h1 {
+   font-size: 100px;
+   background: url(https://i.pinimg.com/originals/ed/4c/b5/ed4cb52a05365253e8c221a8b85a267e.gif) no-repeat;
+   background-size: cover;
+   -webkit-background-clip: text;
+   color: transparent;
+   font: oblique bold 120% cursive; font-size: 70px;
+   -webkit-text-stroke: 5px rgb(0, 0, 0);
+   
+}
+@keyframes moverFondo {
+   0% {
+     background-position: 0 0; /* Posición inicial del fondo */
+   }
+   100% {
+     background-position: -200% 0; /* Desplaza el fondo a la izquierda */
+   }
+ }
+ .infinito {
+   width: 100%;
+   height: 200px; /* Ajusta la altura según sea necesario */
+   background-image: url(fondowanda.png); /* Inserta la URL de la imagen de fondo */
+   background-repeat: repeat-x; /* Hace que la imagen de fondo se repita horizontalmente */
+   background-position: 0 0; /* Posición inicial */
+   animation: moverFondo 13s linear infinite; /* Anima el fondo infinitamente */
+ }
+ .infinitof {
+   width: 100%;
+   height: 50px; /* Ajusta la altura según sea necesario */
+   background-image: url(fondofooter.png); /* Inserta la URL de la imagen de fondo */
+   background-repeat: repeat-x; /* Hace que la imagen de fondo se repita horizontalmente */
+   background-position: 0 0; /* Posición inicial */
+   animation: moverFondo 13s linear infinite; /* Anima el fondo infinitamente */
+ }
